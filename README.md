@@ -13,11 +13,11 @@ CoudWatch alarm allowed us to get notifications.
 
 Environment Variables
 
-- `CHECK_INTERVAL` - Time interval of how often to run the check (in seconds). (default: 60)
+- `CHECK_INTERVAL` - Time interval of how often to run the check (in seconds). (default: `60`)
 - `VAULT_ADDR` - The address of the Vault server. (default: `https://127.0.0.1:8200`)
 - `VAULT_NAME` - Name of the Vault (cluster). This value will be used as CloudWatch dimension value. (default: `Vault`)
-- `METRIC_NAMESPACE` - AWS CloudWatch metric namespace. (default: Vault)
-- `AWS_REGION` - AWS CloudWatch region. (default: us-east-1)
+- `METRIC_NAMESPACE` - AWS CloudWatch metric namespace. (default: `Vault`)
+- `AWS_REGION` - AWS CloudWatch region. (default: `us-east-1`)
 
 Alternatively CLI flags can be used and will override the value specified in environment variables.
 
