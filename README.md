@@ -47,6 +47,6 @@ make
 # Create Docker image
 make container
 
-# Simply run without compiling (you can also applie arguments)
+# Simply run without compiling (you can also apply arguments)
 go run vault-monitor.go [-interval=60]
 ```
