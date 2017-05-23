@@ -21,11 +21,11 @@ Environment Variables
 
 Alternatively CLI flags can be used and will override the value specified in environment variables.
 
-- interval
-- address
-- name
-- namespace
-- region
+- `-interval=60`
+- `-address=https://127.0.0.1:8200`
+- `-name=Vault`
+- `-namespace=Vault`
+- `-region=us-east-1`
 
 ### Docker
 
