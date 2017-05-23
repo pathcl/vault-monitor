@@ -37,7 +37,7 @@ docker run --rm --network=host kasko/vault-monitor vault-monitor -address=http:/
 
 ## Build
 
-``sh
+```sh
 # Install dependencies
 make tools
 
