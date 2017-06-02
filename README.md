@@ -1,13 +1,12 @@
 # Vault monitor
 
-This small program can be used to monitor the seal status of [Hashicorp Vault](https://www.vaultproject.io). It will
-periodically checks [`/sys/seal-status`](https://www.vaultproject.io/api/system/seal-status.html) endpoint and push
+This small tool can be used to monitor the seal status of [Hashicorp Vault](https://www.vaultproject.io). It will
+periodically check [`/sys/seal-status`](https://www.vaultproject.io/api/system/seal-status.html) endpoint and push
 results to [AWS CloudWatch](https://aws.amazon.com/cloudwatch/).
 
 We use this tool to monitor the number of unsealed Vault instances in our Vault cluster. Because Vaults nature is
-that it gets sealed after process restart, and that the unseal process should be done manually, we wanted to get
-notified when we need to perform Vault unsealing. Pushing number of unsealed instances to CloudWatch, together with
-CoudWatch alarm allowed us to get notifications.
+that it gets sealed after process restarts, and that the **unseal process should be done manually**, we wanted to get
+notified when there is a need to perform manual Vault unseal. Pushing the number of unsealed instance count to AWS CloudWatch together with CoudWatch alarm allowed us to get notifications on such occasions.
 
 ## Usage
 
