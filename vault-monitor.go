@@ -144,7 +144,7 @@ func checkSealStatus() {
 
 	_, err = cw.PutMetricData(params)
 	if err != nil {
-        log.Println(err.Error())
+		log.Println(err.Error())
 		return
 	}
 }
