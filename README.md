@@ -49,3 +49,6 @@ make container
 # Simply run without compiling (you can also apply arguments)
 go run vault-monitor.go [-interval=60]
 ```
+## License
+
+For license please check the [LICENSE](LICENSE) file.
