@@ -51,4 +51,4 @@ go run vault-monitor.go [-interval=60]
 ```
 ## License
 
-For license please check the [LICENSE.md](LICENSE.md) file.
+For license please check the [LICENSE](LICENSE) file.
