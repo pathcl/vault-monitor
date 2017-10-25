@@ -32,7 +32,7 @@ func main() {
 	}
 	interval := flag.Int("interval", defaultInterval,
 		"Time interval of how often to run the check (in seconds). "+
-		"Overrides the CHECK_INTERVAL environment variable if set. (default: 60)")
+			"Overrides the CHECK_INTERVAL environment variable if set. (default: 60)")
 
 	defaultAddress := "https://127.0.0.1:8200"
 	if a := os.Getenv("VAULT_ADDR"); a != "" {
@@ -40,7 +40,7 @@ func main() {
 	}
 	address := flag.String("address", defaultAddress,
 		"The address of the Vault server. "+
-		"Overrides the VAULT_ADDR environment variable if set. (default: https://127.0.0.1:8200)")
+			"Overrides the VAULT_ADDR environment variable if set. (default: https://127.0.0.1:8200)")
 
 	defaultVaultName := "Vault"
 	if n := os.Getenv("VAULT_NAME"); n != "" {
@@ -48,7 +48,7 @@ func main() {
 	}
 	vaultName = flag.String("name", defaultVaultName,
 		"The name of the Vault (cluster). This value will be used as CloudWatch dimension value. "+
-		"Overrides the VAULT_NAME environment variable if set. (default: Vault)")
+			"Overrides the VAULT_NAME environment variable if set. (default: Vault)")
 
 	defaultNamespace := "Vault"
 	if r := os.Getenv("METRIC_NAMESPACE"); r != "" {
@@ -56,7 +56,7 @@ func main() {
 	}
 	namespace = flag.String("namespace", defaultNamespace,
 		"AWS CloudWatch metric namespace. "+
-		"Overrides the METRIC_NAMESPACE environment variable if set. (default: Vault)")
+			"Overrides the METRIC_NAMESPACE environment variable if set. (default: Vault)")
 
 	defaultRegion := "us-east-1"
 	if r := os.Getenv("AWS_REGION"); r != "" {
@@ -64,7 +64,7 @@ func main() {
 	}
 	awsRegion = flag.String("region", defaultRegion,
 		"AWS CloudWatch region. "+
-		"Overrides the AWS_REGION environment variable if set. (default: us-east-1)")
+			"Overrides the AWS_REGION environment variable if set. (default: us-east-1)")
 
 	flag.Parse()
 
